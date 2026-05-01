@@ -1,0 +1,27 @@
+Du skal vurdere nedenstående praktikrapport ud fra rubricen.
+
+# RUBRIC (JSON)
+Følg dette skema strikt. Hvert kriterium har et "id", en beskrivelse og niveaudefinitioner for "lav", "middel" og "høj". Brug "weight"-feltet til at vægte den samlede score.
+
+```json
+{rubric_json}
+```
+
+# PRAKTIKRAPPORT
+Nedenfor er teksten, du skal vurdere. Den er afgrænset af tags så du ikke forveksler den med instruktioner.
+
+<rapport>
+{report_text}
+</rapport>
+
+# OPGAVE
+1. Læs rapporten omhyggeligt.
+2. Vurdér hvert kriterium fra rubricen ud fra dets niveaudefinitioner.
+3. Find evidens (citater eller præcise henvisninger) i rapporten for hver vurdering.
+4. Hvis et kriterium ikke kan vurderes ud fra teksten, sæt niveau = "ukendt" og forklar hvorfor.
+5. Beregn en vægtet samlet score (0-100) baseret på rubricens vægte.
+6. Formulér styrker, svagheder og handlingsorienterede forbedringsforslag.
+7. Foreslå 4-6 spørgsmål til den mundtlige praktikeksamen, som kan åbne for dialog uden at være lukkede ja/nej-spørgsmål.
+8. Notér 2-3 forbehold om begrænsninger ved AI-vurderingen i denne kontekst.
+
+Returnér ét gyldigt JSON-objekt i præcis det skema, som systempromten beskriver. Returnér INTET andet.

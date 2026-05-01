@@ -1,0 +1,128 @@
+{
+  "samlet_vurdering": {
+    "niveau": "middel",
+    "score": 56.0,
+    "resume": "Rapporten beskriver et engageret praktikforløb med et udfordrende AI-research-projekt, der endte med både konkret resultat (skift fra GPT-4 til 4.1-mini, opdagelse af 'hub'-til-AI Foundry merge) og synligt udbytte (TV2-besøg, jobtilbud). Refleksionen om at håndtere modgang og tidsestimering er ærlig. Hovedsvaghederne er en svag kobling mellem opgaver og konkret teori fra uddannelsen, en springende sproglig form med talrige tegnsætnings- og strukturfejl, samt at læringsmål primært refereres med 'Se Bilag' uden at integreres i teksten. Bilaget kan ikke verificeres af AI-grader'en.",
+    "score_explanation": "Vægtet score afspejler middel-niveau på de fleste kriterier med svagheder på opgaver/teori-koblingen og form/formidling."
+  },
+  "kriterier": [
+    {
+      "id": "virksomhed_og_drift",
+      "navn": "Virksomhedsbeskrivelse og daglig drift",
+      "niveau": "middel",
+      "begrundelse": "Du beskriver V1 (også omtalt som J1) som B2B-virksomhed inden for IT, data, infrastruktur og web, og citerer hjemmesiden direkte. Den daglige drift beskrives via morgenmøder, reviews, estimeringer og Scrum-rammer. Der er en god konkretisering af mødestrukturen, men virksomhedens øvrige funktioner (salg, kundekontakt, support) berøres kun gennem TV2-besøget.",
+      "evidens": [
+        "'V1 A/S, som er en b2b virksomhed indenfor IT, Data, Infrastruktur og web.'",
+        "'Jeg deltog i de daglige morgenmøder, som dannede grundlag for dagens forløb'",
+        "'Der blev estimeret tid, planlagt opgaver med deadlines, reviews af arbejdet, og evalueret i professionelle rammer.'"
+      ]
+    },
+    {
+      "id": "laeringsmaal",
+      "navn": "Opfyldelse af læringsmål",
+      "niveau": "middel",
+      "begrundelse": "Du markerer flere steder eksplicit hvor læringsmål berøres ('Indgår i Læringsmål Se Bilag'), hvilket viser bevidsthed om kravet, men selve teksten integrerer ikke læringsmålene i analyseringen. Tilegnelse af ny viden er stærkt dækket (C#/.NET, Umbraco, Azure, AI Foundry). Tværfagligt samarbejde med en datalog og daglig sparring er konkret. Færdigheden 'vurdere praksisnære problemstillinger og opstille løsningsmuligheder' er tydelig i hub-til-AI Foundry skiftet.",
+      "evidens": [
+        "'(Indgår i Læringsmål Se Bilag)' nævnes flere steder, men selve læringsmålene udfoldes ikke i teksten.",
+        "'Tværfagligt samarbejde med bl.a en datalog var lærerigt'",
+        "'Konklusionen blev, at \"Hub\" stadig virkede til legacy AI modeller, samt open source Modeller. Hvor mit primære område var en gpt 4 model, blev jeg nødt til at opdatere til 4.1-mini'"
+      ]
+    },
+    {
+      "id": "opgaver_og_teori",
+      "navn": "Opgaver og refleksion ift. teori",
+      "niveau": "middel",
+      "begrundelse": "Opgaverne er konkrete (Umbraco-website, formular, AI-chatbot PoC i AI Foundry). Du nævner Scrum, MVC, Git, deployment med Caddy/DigitalOcean, samt analogier mellem Umbraco og Unity Game Dev - dette er en god kobling. Men der er ingen dybere analyse af teorien, modellerne eller arkitekturen i AI-løsningen, og refleksionen om hvorfor netop disse modeller var relevante mangler.",
+      "evidens": [
+        "'Den objektorienterede tankegang MVC. Selvom man kodede i andre teknologier, var MVC det samme.'",
+        "'Jeg opdagede at Umbraco CMS ligger tæt på de Koncepter vi har lavet under Unity Game dev c#'",
+        "'Den viden jeg dannede mig med miljøvariabler fra vores deployment, med caddy server og digital ocean viste sig at være meget behjælpelig til at lære Azure cloud.'"
+      ]
+    },
+    {
+      "id": "personlig_udvikling",
+      "navn": "Refleksion over personlige udviklingsmål",
+      "niveau": "høj",
+      "begrundelse": "Stærk personlig refleksion. Du er ærlig om at have antaget at C# var nemmere efter lidt Game Dev (og taget fejl), om at have svært ved at bede om hjælp, om at have måttet skifte rolle fra hjælper til hjælpsøger, og om at have presset igennem trods modgang. Det er konkret og selvkritisk på en konstruktiv måde.",
+      "evidens": [
+        "'jeg vidste til at starte med, at c# sharp var relativt nyt for mig... jeg tog fejl, det var svært.'",
+        "'Jeg har lært at spørge mere til råds og om hjælp, hvis jeg bliver i tvivl, også med mere målrettede intentioner'",
+        "'Det var ikke en nem opgave. Jeg havde det lidt svært undervejs flere gange, men jeg holdt ud til det sidste!'"
+      ]
+    },
+    {
+      "id": "udbytte_for_virksomhed_og_studerende",
+      "navn": "Udbytte for virksomhed og studerende",
+      "niveau": "høj",
+      "begrundelse": "Begge perspektiver er solidt dækket. For virksomheden: TV2-besøget på dit projekt, et jobtilbud som direkte resultat, og bidraget til virksomhedens AI-strategi. For dig selv: nye teknologier, læring om tidsestimering og research-disciplin. Resultaterne er underbyggede med ydre evidens (TV2, jobtilbud, demoevaluering med bifald).",
+      "evidens": [
+        "'Det resulterede bl.a i at TV2 kom forbi og der blev kigget nærmere på et projekt jeg arbejdede på'",
+        "'Jeg er blevet tilbudt en spændende stilling på grund af dette.'",
+        "'jeg fik et bifald for mit bidrag, og engagement og de observationer jeg havde givet dem indblik i.'"
+      ]
+    },
+    {
+      "id": "dare_share_care",
+      "navn": "Dare, Share, Care",
+      "niveau": "middel",
+      "begrundelse": "Dare er tydelig: du beder eksplicit om en udfordring, og du holder ud trods modgang. Share kommer indirekte til udtryk gennem den daglige sparring med datalog og kolleger. Care kommer til udtryk i den rolige, formelle håndtering af hub-fejlmeldingen 1-til-1 og i en bevidst respektfuld omgang med kolleger. Værdierne nævnes ikke eksplicit ved navn.",
+      "evidens": [
+        "'Jeg bad tidligt i mit forløb om en udfordring. Og det fik jeg!' (Dare)",
+        "'udvikler kunne bruge min viden om AI og vi havde daglig sparring' (Share)",
+        "'Jeg håndterede det så roligt, formelt og diskret som muligt 1 til 1.' (Care)"
+      ]
+    },
+    {
+      "id": "form_og_formidling",
+      "navn": "Form, struktur og formidling",
+      "niveau": "lav",
+      "begrundelse": "Strukturen er fragmenteret. Sproget bærer præg af manglende korrekturlæsning: hyppige tegnsætningsfejl, inkonsistent brug af 'V1' og 'J1' (samme virksomhed?), 'b2b' med små bogstaver, sætninger der bryder midt i en tanke, og en del telegramstil ('Hjemmeside Rørlægningsfirma Umbraco cms (Solo)'). Læringsmålet om at 'formidle praksisnære problemstillinger' er kun delvist opfyldt - indholdet er der, men formidlingen forstyrres af formen. Bilag refereres uden at de er en del af leverancen.",
+      "evidens": [
+        "'V1' og 'J1' bruges om hvad der ser ud til at være samme virksomhed: 'praktik hos V1 A/S' vs. 'Hos J1 er vi specialister...'",
+        "Listeformen midt i prosa: 'Hjemmeside Rørlægningsfirma Umbraco cms (Solo) Skole Udfyldnings Formular (Solo)...'",
+        "'(Indgår i Læringsmål Se Bilag)' gentages uden at bilaget er bekræftet vedlagt."
+      ]
+    }
+  ],
+  "styrker": [
+    "Et reelt teknisk løsningsbidrag: opdagelse af hub/AI Foundry-merget og pragmatisk skift til 4.1-mini.",
+    "Stærk og ærlig refleksion over personlig udvikling, særligt om tidsestimering og at bede om hjælp.",
+    "Tydeligt udbytte for virksomheden, underbygget med ydre evidens (TV2-besøg, jobtilbud, demoevaluering).",
+    "God selvkritik og modenhed i håndteringen af modgang i et research-pionerprojekt.",
+    "Bredde i teknologistakken: C#, .NET, Umbraco, Python, JavaScript, Azure - viser tilegnelse af ny viden."
+  ],
+  "svagheder": [
+    "Sprog og struktur trækker ned: gentagne tegnsætningsfejl, telegramstil, inkonsistent virksomhedsnavn (V1 vs. J1), og fragmenterede afsnit.",
+    "Læringsmålene refereres med 'Se Bilag' frem for at integreres analytisk i teksten.",
+    "Bilag (det fulde læringsmålsskema) refereres som leverance, men kan ikke verificeres som en del af rapporten.",
+    "Begrænset dybde i den teoretiske refleksion - teknologier nævnes, men der er ikke en dyb diskussion af arkitektoniske valg.",
+    "Dare-Share-Care kommer ikke eksplicit til udtryk og kunne med fordel italesættes."
+  ],
+  "forbedringsforslag": [
+    "Korrekturlæs grundigt: sørg for konsistent virksomhedsnavn, ret tegnsætning, og omformulér telegramsætninger til hele afsnit.",
+    "Skriv læringsmålene direkte ind i teksten med konkret evidens, frem for at henvise til bilag.",
+    "Tilføj en kort teknisk dybdeanalyse af AI-chatbot-PoC'en: arkitektur, valg af model, hvordan den hænger sammen med Umbraco-systemet.",
+    "Italesæt Dare-Share-Care eksplicit - du har gode eksempler, men gør koblingen tydelig.",
+    "Strukturér rapporten med klare hovedafsnit der følger kravene punkt for punkt (virksomhed → læringsmål → opgaver → personlig udvikling → udbytte → kvittering)."
+  ],
+  "dialogspoergsmaal": [
+    "Du opdagede at hub var merged ind i AI Foundry og skiftede til GPT-4.1-mini. Kan du tegne den arkitektur du endte med, og forklare hvilke komponenter der talte sammen?",
+    "Du nævner Notification handlers og file handlers i Umbraco som essentielle for dataoverførsler til Azure. Kan du udfolde hvordan dataflowet fungerede ende-til-ende?",
+    "Du fortæller at C# var sværere end forventet trods Unity-erfaring. Hvad var den vigtigste forskel mellem game-dev C# og enterprise C#, du opdagede?",
+    "Du er blevet tilbudt en stilling. Hvad var den vigtigste enkeltbeslutning eller indsats, der efter din vurdering førte til det?",
+    "Du beskriver at du blev bedre til tidsestimering. Hvad er din nuværende metode, og hvor præcis er den?",
+    "Hvis du skulle starte AI-PoC'en om i dag, hvad ville du gøre anderledes - og hvilken læring fra studiet ville du nu inddrage tidligere?"
+  ],
+  "forbehold": [
+    "Vurderingen baseres på den indsendte markdown-tekst. Bilaget med læringsmålsskemaet, som flere steder henvises til, er ikke en del af input.",
+    "Tegnomfang er ikke verificeret mod 12000-tegns kravet.",
+    "Modellen kan ikke vurdere det faktiske tekniske kvalitetsniveau af AI-PoC'en eller koden - kun hvordan det er formidlet i teksten."
+  ],
+  "meta": {
+    "source_file": "sample-data/student3.md",
+    "model": "claude-opus-4-7 (illustrative manual run)",
+    "rubric_name": "Praktikrapport - Datamatiker",
+    "rubric_version": "1.0",
+    "ai_disclaimer": "Vejledende vurdering. Ikke en formel bedømmelse."
+  }
+}

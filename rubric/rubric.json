@@ -1,0 +1,96 @@
+{
+  "name": "Praktikrapport - Datamatiker",
+  "version": "1.0",
+  "description": "Vurderingsrubric for praktikrapporter på datamatikeruddannelsen, udledt af læringsmål, formelle krav til rapporten samt EK's Dare-Share-Care-koncept.",
+  "scale": {
+    "low": "Lav målopfyldelse - kriteriet er kun overfladisk eller mangelfuldt dækket.",
+    "medium": "Middel målopfyldelse - kriteriet er dækket på et acceptabelt niveau, men med tydelige svagheder.",
+    "high": "Høj målopfyldelse - kriteriet er dækket grundigt, reflekteret og med tydelig sammenhæng til praksis og teori."
+  },
+  "criteria": [
+    {
+      "id": "virksomhed_og_drift",
+      "name": "Virksomhedsbeskrivelse og daglig drift",
+      "weight": 0.10,
+      "source": "Krav til rapport + læringsmål 'Viden: Den daglige drift i hele praktikvirksomheden'",
+      "description": "I hvilken grad beskriver rapporten praktikvirksomheden og giver indsigt i den daglige drift, herunder organisation, processer og forretningsmæssig kontekst.",
+      "levels": {
+        "low": "Mangler virksomhedsbeskrivelse, eller den er meget kort og overfladisk. Ingen reel indsigt i drift eller organisation.",
+        "medium": "Kort beskrivelse af virksomheden er til stede, men driften beskrives kun delvist eller fra ét perspektiv (fx kun udviklingsteamet).",
+        "high": "Klar beskrivelse af virksomheden samt nuanceret indblik i daglig drift på tværs af funktioner (udvikling, forretning, kunder, processer)."
+      }
+    },
+    {
+      "id": "laeringsmaal",
+      "name": "Opfyldelse af læringsmål",
+      "weight": 0.25,
+      "source": "Studieordning - viden, færdigheder, kompetencer + krav til rapport",
+      "description": "I hvilken grad beskriver og dokumenterer rapporten, hvordan den studerende har arbejdet med læringsmålene: alsidige tekniske/analytiske arbejdsmetoder, vurdering af praksisnære problemstillinger, strukturering og planlægning, formidling, håndtering af udviklingsorienterede situationer, tilegnelse af ny viden samt fagligt og tværfagligt samarbejde.",
+      "levels": {
+        "low": "Læringsmålene nævnes ikke eller refereres kun løst. Det er uklart, hvordan de er opfyldt i praksis.",
+        "medium": "Flere læringsmål adresseres med konkrete eksempler, men dækningen er ujævn, eller koblingen mellem opgaver og læringsmål er svag.",
+        "high": "De væsentligste læringsmål adresseres eksplicit eller tydeligt implicit med konkrete, varierede eksempler fra praktikken, og koblingen mellem opgaver og læringsmål er tydelig."
+      }
+    },
+    {
+      "id": "opgaver_og_teori",
+      "name": "Opgaver og refleksion ift. teori",
+      "weight": 0.20,
+      "source": "Krav til rapport: 'Beskrivelse af de udførte opgaver og refleksion over disse i relation til de teorier/modeller den studerende er blevet undervist i på uddannelsen'",
+      "description": "Beskrives udførte opgaver konkret, og kobles de til relevant teori/modeller fra uddannelsen (fx Scrum/Kanban, MVC, SDLC, CIA-triaden, UML, agile manifest, versionsstyring m.m.)?",
+      "levels": {
+        "low": "Opgaver beskrives løst eller anekdotisk uden kobling til teori og modeller fra uddannelsen.",
+        "medium": "Opgaver beskrives med en vis konkrethed, og enkelte teorier/modeller nævnes, men koblingen er overfladisk.",
+        "high": "Opgaver beskrives konkret og kobles eksplicit til flere relevante teorier/modeller fra uddannelsen, med refleksion over hvordan teorien fungerer (eller ikke fungerer) i praksis."
+      }
+    },
+    {
+      "id": "personlig_udvikling",
+      "name": "Refleksion over personlige udviklingsmål",
+      "weight": 0.15,
+      "source": "Krav til rapport: 'Refleksion over dine personlige udviklingsmål'",
+      "description": "Reflekterer den studerende over personlige udviklingsmål (fx kommunikation, selvtillid, at bede om hjælp, ansvar) og hvordan disse er udviklet eller udfordret under praktikken?",
+      "levels": {
+        "low": "Ingen eller meget overfladisk refleksion over personlig udvikling.",
+        "medium": "Personlige udviklingsmål nævnes med eksempler, men refleksionen er deskriptiv frem for analytisk.",
+        "high": "Konkrete personlige udviklingsmål reflekteres tydeligt, med eksempler på hvad der lykkedes/ikke lykkedes og hvorfor, samt hvad det betyder fremadrettet."
+      }
+    },
+    {
+      "id": "udbytte_for_virksomhed_og_studerende",
+      "name": "Udbytte for virksomhed og studerende",
+      "weight": 0.10,
+      "source": "Krav til rapport: 'Refleksion over praktikforløbets udbytte for virksomheden og dig selv'",
+      "description": "Reflekteres der over, hvilken værdi praktikken har skabt for virksomheden, og hvilket udbytte den studerende har fået?",
+      "levels": {
+        "low": "Refleksionen mangler eller er begrænset til 'jeg lærte meget'.",
+        "medium": "Begge perspektiver berøres, men det ene (typisk virksomhedens udbytte) er svagt eller udokumenteret.",
+        "high": "Både den studerendes og virksomhedens udbytte beskrives konkret og underbygges med eksempler eller feedback fra virksomheden."
+      }
+    },
+    {
+      "id": "dare_share_care",
+      "name": "Dare, Share, Care",
+      "weight": 0.10,
+      "source": "EK's Dare-Share-Care-koncept - indgår eksplicit i bedømmelsen",
+      "description": "Viser rapporten tegn på de tre kerneværdier: Dare (mod, initiativ, vedholdenhed), Share (videndeling, samarbejde, fællesskab), Care (ansvar, tillid, omsorg for sig selv og andre)?",
+      "levels": {
+        "low": "Værdierne fremgår ikke eller kun tilfældigt. Få eller ingen eksempler på initiativ, samarbejde eller omsorg.",
+        "medium": "En eller to af værdierne er tydelige i rapporten, men den tredje er svag eller fraværende.",
+        "high": "Alle tre værdier kommer til udtryk gennem konkrete situationer i rapporten - fx initiativ til udfordringer (Dare), videndeling og samarbejde (Share), og ansvar/relationer (Care)."
+      }
+    },
+    {
+      "id": "form_og_formidling",
+      "name": "Form, struktur og formidling",
+      "weight": 0.10,
+      "source": "Læringsmål: 'Formidle praksisnære problemstillinger og begrundede løsningsforslag' + omfangskrav (max 5 normalsider, 12000 tegn ekskl. bilag)",
+      "description": "Er rapporten struktureret, sprogligt klar, og overholder den formelle krav (omfang, kvittering for evalueringsskema, individuel form)?",
+      "levels": {
+        "low": "Rapporten er svær at læse, mangler struktur, eller overholder ikke formelle krav.",
+        "medium": "Rapporten har en genkendelig struktur, men lider af sproglige eller strukturelle svagheder, eller har grænsetilfælde ift. omfang.",
+        "high": "Rapporten er velstruktureret, klart formidlet og overholder de formelle krav."
+      }
+    }
+  ]
+}

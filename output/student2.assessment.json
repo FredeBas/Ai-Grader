@@ -1,0 +1,127 @@
+{
+  "samlet_vurdering": {
+    "niveau": "middel",
+    "score": 67.0,
+    "resume": "Rapporten beskriver et engageret praktikforløb hos en ski-rejse startup med en bred vifte af tekniske opgaver fra onboarding til feature-udvikling, CMS-arbejde og data-tracking. Den personlige refleksion er stærk og ærlig - særligt omkring at flytte til Aarhus og at lære at bede om hjælp. Hovedsvagheden er en tynd kobling til konkret teori og modeller fra studiet: agile metoder og UML nævnes, men koblingen er primært beskrivende. Dare-Share-Care fremgår implicit men ikke gennem aktive valg."
+  },
+  "kriterier": [
+    {
+      "id": "virksomhed_og_drift",
+      "navn": "Virksomhedsbeskrivelse og daglig drift",
+      "niveau": "høj",
+      "begrundelse": "Du beskriver S1 godt som en hurtigt voksende tech-startup, der aggregerer skirejser, og giver konkrete tal (12 mio. rejser, vækst fra 8 mio.). Du beskriver desuden flere dele af virksomheden: udvikling, marketing, forretning, partnerskaber, og hvordan virksomheden tjener penge. Indsigt i drift er solid, omend primært via Slack og standups.",
+      "evidens": [
+        "'S1 samler rejser fra alle store danske udbydere...'",
+        "'S1 tjener en procentdel pr. solgt rejse hos sine samarbejdspartnere'",
+        "'Jeg har også fået indsigt i hele organisationens opbygning fra udvikling til marketing og forretningsdelen.'"
+      ]
+    },
+    {
+      "id": "laeringsmaal",
+      "navn": "Opfyldelse af læringsmål",
+      "niveau": "middel",
+      "begrundelse": "Tekniske og analytiske arbejdsmetoder er tydeligt dækket gennem feature-udvikling, CMS-arbejde, query-optimering og data-tracking. Du tilegner dig ny viden (CMS, SEO, TypeScript/Node.js) - også et eksplicit læringsmål. Strukturering og planlægning fremgår af Kanban-arbejdet. Det fagligt og tværfaglige samarbejde er lidt svagere dækket - du nævner samarbejde i teamet, men eksempler på decideret tværfaglig sparring (fx med marketing eller design) er korte.",
+      "evidens": [
+        "'Allerede fra start brugte jeg mine erfaringer med agile metoder i praksis.'",
+        "'Jeg blev introduceret til CMS systemet Sanity'",
+        "'Jeg lærte, hvordan queries kan optimeres for hastighed og ydeevne'"
+      ]
+    },
+    {
+      "id": "opgaver_og_teori",
+      "navn": "Opgaver og refleksion ift. teori",
+      "niveau": "middel",
+      "begrundelse": "Opgaverne beskrives konkret og bredt (Page Builder, kampagnesystem, søgefunktion, BI-tracking). Koblingen til teori fra studiet er dog ujævn: du nævner Kanban, agile, UML/ER/use case/aktivitetsdiagrammer og scrum/XP, men primært som kontrast til virkeligheden frem for som aktive analyseredskaber. Refleksionen om manglende UML-diagrammer er god, men der er ikke en grundig diskussion af eksempelvis MVC, designmønstre eller arkitektur, selvom opgaverne lægger op til det.",
+      "evidens": [
+        "'Hos S1 arbejder de med Kanban, som administreres gennem værktøjet Linear.'",
+        "'Disse metoder blev ikke direkte brugt, men jeg kunne se hvordan en mere struktureret brug af fx backlog prioritering og sprint reviews kunne have skabt et bedre overblik'",
+        "'Jeg oplevede også, hvordan det kan gøre det vanskeligere at forstå systemets struktur og sammenhænge, når UML-diagrammer som f.eks. klassediagrammer ikke er til stede.'"
+      ]
+    },
+    {
+      "id": "personlig_udvikling",
+      "navn": "Refleksion over personlige udviklingsmål",
+      "niveau": "høj",
+      "begrundelse": "Stærk og ærlig refleksion om at flytte fra Bornholm til Aarhus, om initielt at være tilbageholdende med at ændre kollegers kode, og om at lære at spørge tidligere i processen. Dette er konkret personlig udvikling med både mod og selvkritik.",
+      "evidens": [
+        "'Jeg valgte derfor at flytte til Aarhus for at være fysisk til stede på kontoret'",
+        "'Jeg havde en tendens til at bruge for meget tid på at finde løsningen selv, i stedet for at spørge'",
+        "'I starten var jeg lidt tilbageholdende med at ændre i kode skrevet af mine kolleger, men indså, at det netop var det der var min opgave som udvikler.'"
+      ]
+    },
+    {
+      "id": "udbytte_for_virksomhed_og_studerende",
+      "navn": "Udbytte for virksomhed og studerende",
+      "niveau": "middel",
+      "begrundelse": "Eget udbytte er rigt beskrevet. Virksomhedens udbytte beskrives også - Page Builder skulle 'spare udviklerne tid' og kampagnesystemet blev brugt aktivt af content-teamet. Det er konkret, men der er ingen ekstern bekræftelse (citater fra kolleger, måling af effekt, konkret feedback), så det hviler på din egen vurdering.",
+      "evidens": [
+        "'Formålet var at spare udviklerne tid i fremtiden og give content teamet frihed til selv at opbygge sider'",
+        "'Et eksempel var Sunwebs Early Booking-kampagne, som blev taget i brug, mens jeg stadig var i praktik.'",
+        "'Disse data blev brugt i virksomhedens BI-dashboards til at følge udviklingen og dokumentere effekten af nye features.'"
+      ]
+    },
+    {
+      "id": "dare_share_care",
+      "navn": "Dare, Share, Care",
+      "niveau": "middel",
+      "begrundelse": "Dare ses i flytningen til Aarhus og at turde redigere kollegers kode. Care fremgår implicit i den positive omtale af kontorfællesskabet. Share er svagest - du beskriver feedback og review-kultur, men konkrete eksempler på selv at have delt viden eller hjulpet andre er sparsomme. Værdierne nævnes ikke eksplicit.",
+      "evidens": [
+        "'Jeg valgte derfor at flytte til Aarhus' (Dare)",
+        "'frokoster, dart og bordtennis kampe, fredagsbar' (Care - relationer)",
+        "'modtage feedback på mit arbejde, og hele tiden forbedre mine løsninger' (Share - men passiv form)"
+      ]
+    },
+    {
+      "id": "form_og_formidling",
+      "navn": "Form, struktur og formidling",
+      "niveau": "middel",
+      "begrundelse": "Rapporten har god struktur med tydelige overskrifter og en logisk progression. Sproget er flydende. Der er en del passager med korte sætninger og kommafejl, og enkelte gentagelser. Omfanget kan ikke vurderes uden tegntælling, men virker tæt på grænsen. En afsluttende kvitteringssektion fra Cphbusiness bryder lidt med rapportens stemme.",
+      "evidens": [
+        "Klar struktur med 'Onboarding og Kanban', 'Feature udvikling', 'Page Builder' osv.",
+        "'Det var spændende, lærerigt, der var dog heldigvis lys for enden af tunellen!' - sproglige småløsheder",
+        "Den indsatte mailtekst fra Cphbusiness ('Tak for din evaluering...') er en kvittering for evaluering, hvilket er et formelt krav."
+      ]
+    }
+  ],
+  "styrker": [
+    "Bred portefølje af konkrete tekniske opgaver - fra simple onboarding-tasks til større feature som Page Builder.",
+    "Ærlig og personlig refleksion om udfordringerne ved at flytte og om vanen med at gemme sig bag selvstændig problemløsning.",
+    "Solid forståelse for hvordan data, BI og forretningsmål hænger sammen - et tegn på modnet faglighed.",
+    "Tydelig god indsigt i virksomheden på tværs af afdelinger.",
+    "Reflekterer eksplicit over at studiet kunne styrkes på CMS og SEO - konstruktiv tilbagemelding."
+  ],
+  "svagheder": [
+    "Teorier og modeller fra studiet bruges mest som referencer, ikke som aktive analyseredskaber til opgaverne.",
+    "Virksomhedens udbytte er ikke underbygget med ekstern feedback eller konkrete tal.",
+    "Dare-Share-Care værdierne er hverken nævnt eksplicit eller særligt tydelige - særligt 'Share' er underdrejet.",
+    "Få detaljer om de tekniske beslutninger ved Page Builder (datamodel, blokstruktur, valg af responsive strategi).",
+    "Sproglige uklarheder og kommafejl forstyrrer i flere passager."
+  ],
+  "forbedringsforslag": [
+    "Vælg én eller to opgaver (fx Page Builder eller søgefunktionen) og analyser dem mod konkrete teorier - fx MVC, datamodellering, eller separation of concerns.",
+    "Bed evt. en kollega eller mentor om en kort skriftlig vurdering af din indsats, så virksomhedens udbytte ikke kun hviler på selvvurdering.",
+    "Skriv en kort sektion eller integrér eksplicit Dare, Share og Care med konkrete eksempler - de er en del af bedømmelsesgrundlaget.",
+    "Beskriv mindst én teknisk beslutning (fx datastrukturen i Page Builder) i nok dybde til at vise faglig vurdering.",
+    "Korrekturlæs for kommafejl og uklare formuleringer."
+  ],
+  "dialogspoergsmaal": [
+    "Page Builder-projektet lyder spændende. Kan du tegne datamodellen og forklare, hvorfor du valgte netop disse blokke?",
+    "Du nævner at savne UML-diagrammer i kodebasen. Hvilken konkret situation ville et klassediagram have hjulpet dig i?",
+    "Du flyttede til Aarhus for at være fysisk til stede. Hvad er den vigtigste forskel for dig mellem fysisk og remote samarbejde, fagligt set?",
+    "Du opdagede vigtigheden af at spørge tidligere. Hvilken konkret arbejdsmetode bruger du nu, hvor du før ville være gået i selvstændig løsningsmode?",
+    "Du beskriver at have udviklet en tracker i PostHog. Hvilke etiske eller privacy-overvejelser var der i den proces?",
+    "Hvis du skulle introducere én ting fra studiet hos S1, hvad ville det være, og hvordan ville du sælge det til teamet?"
+  ],
+  "forbehold": [
+    "Vurderingen er udelukkende baseret på den indsendte markdown-tekst. Tegnomfanget er ikke verificeret mod 12000-tegns kravet.",
+    "Modellen kan ikke vurdere kvaliteten af den faktiske kode eller arkitektoniske beslutninger - kun hvordan de er beskrevet.",
+    "Vurdering af tværfagligt samarbejde og social adfærd hviler på selvbeskrivelse uden ekstern dokumentation."
+  ],
+  "meta": {
+    "source_file": "sample-data/student2.md",
+    "model": "claude-opus-4-7 (illustrative manual run)",
+    "rubric_name": "Praktikrapport - Datamatiker",
+    "rubric_version": "1.0",
+    "ai_disclaimer": "Vejledende vurdering. Ikke en formel bedømmelse."
+  }
+}

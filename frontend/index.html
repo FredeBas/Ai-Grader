@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI-grader (vejledende)</title>
+  <style>
+    :root {
+      --bg: #f6f7f9;
+      --panel: #ffffff;
+      --border: #e3e6eb;
+      --ink: #1a1f2b;
+      --muted: #5b6473;
+      --accent: #2b6cb0;
+      --accent-soft: #ebf2fa;
+      --green: #2f855a;
+      --green-soft: #e6f4ec;
+      --amber: #b7791f;
+      --amber-soft: #fdf6e3;
+      --red: #c53030;
+      --red-soft: #fdecec;
+      --gray-soft: #eceef2;
+    }
+    * { box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      line-height: 1.5;
+    }
+    header {
+      background: var(--panel);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 24px;
+    }
+    header h1 { margin: 0; font-size: 20px; }
+    header p { margin: 4px 0 0; color: var(--muted); font-size: 13px; }
+    main {
+      max-width: 1100px;
+      margin: 24px auto;
+      padding: 0 24px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } }
+    .panel {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 18px;
+    }
+    .panel h2 { margin: 0 0 12px; font-size: 16px; }
+    textarea {
+      width: 100%;
+      min-height: 360px;
+      font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+      font-size: 12.5px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 10px;
+      resize: vertical;
+    }
+    .row { display: flex; gap: 8px; margin-top: 12px; }
+    button {
+      background: var(--accent);
+      color: #fff;
+      border: 0;
+      border-radius: 6px;
+      padding: 10px 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    button.ghost { background: #fff; color: var(--accent); border: 1px solid var(--accent); }
+    button:disabled { opacity: 0.6; cursor: progress; }
+    .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 600;
+    }
+    .pill.lav    { background: var(--red-soft);   color: var(--red); }
+    .pill.middel { background: var(--amber-soft); color: var(--amber); }
+    .pill.høj    { background: var(--green-soft); color: var(--green); }
+    .pill.ukendt { background: var(--gray-soft);  color: var(--muted); }
+    .score-row { display: flex; align-items: baseline; gap: 12px; }
+    .score-row .num { font-size: 32px; font-weight: 700; }
+    .crit { border-top: 1px solid var(--border); padding: 12px 0; }
+    .crit:first-child { border-top: 0; padding-top: 0; }
+    .crit-head { display: flex; justify-content: space-between; gap: 12px; align-items: center; }
+    .crit-head h3 { margin: 0; font-size: 14px; }
+    .evidens { background: var(--accent-soft); padding: 6px 10px; margin: 4px 0; border-left: 3px solid var(--accent); font-size: 13px; color: #28384a; border-radius: 3px; }
+    ul.tight { margin: 4px 0; padding-left: 20px; }
+    ul.tight li { margin: 4px 0; }
+    .group { margin: 16px 0; }
+    .group h3 { margin: 0 0 6px; font-size: 13px; text-transform: uppercase; letter-spacing: 0.04em; color: var(--muted); }
+    .disclaimer { background: var(--amber-soft); color: var(--amber); padding: 8px 12px; border-radius: 6px; font-size: 13px; margin-bottom: 12px; }
+    .err { background: var(--red-soft); color: var(--red); padding: 10px; border-radius: 6px; font-size: 13px; }
+    .placeholder { color: var(--muted); font-size: 14px; padding: 30px 10px; text-align: center; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>AI-grader</h1>
+    <p>Vejledende AI-vurdering af praktikrapport ud fra rubric. Ikke en formel bedømmelse.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Rapport (markdown eller tekst)</h2>
+      <textarea id="report" placeholder="Indsæt rapportens tekst her..."></textarea>
+      <div class="row">
+        <button id="grade-btn">Vurder rapport</button>
+        <button id="sample-btn" class="ghost">Indsæt eksempel</button>
+      </div>
+      <p style="font-size:12px;color:var(--muted);margin-top:8px;">Backend skal køre på <code>http://localhost:8000</code>.</p>
+    </section>
+
+    <section class="panel" id="result-panel">
+      <h2>Vurdering</h2>
+      <div id="result"><div class="placeholder">Indsend en rapport for at se vurderingen.</div></div>
+    </section>
+  </main>
+
+  <script>
+    const API = "http://localhost:8000";
+
+    const SAMPLE = `## Praktikrapport
+Jeg har været i praktik hos S1, en startup som...
+(Indsæt din egen tekst her.)`;
+
+    const $ = id => document.getElementById(id);
+
+    $("sample-btn").onclick = () => { $("report").value = SAMPLE; };
+
+    $("grade-btn").onclick = async () => {
+      const text = $("report").value.trim();
+      if (!text) {
+        renderError("Skriv eller indsæt en rapport først.");
+        return;
+      }
+      const btn = $("grade-btn");
+      btn.disabled = true;
+      btn.textContent = "Vurderer...";
+      $("result").innerHTML = '<div class="placeholder">Sender til LLM...</div>';
+
+      try {
+        const r = await fetch(API + "/grade", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ report_text: text })
+        });
+        if (!r.ok) {
+          const err = await r.json().catch(() => ({}));
+          throw new Error(err.detail || `HTTP ${r.status}`);
+        }
+        const data = await r.json();
+        renderResult(data);
+      } catch (e) {
+        renderError(e.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = "Vurder rapport";
+      }
+    };
+
+    function renderError(msg) {
+      $("result").innerHTML = `<div class="err">Fejl: ${escapeHtml(msg)}</div>`;
+    }
+
+    function renderResult(d) {
+      const v = d.samlet_vurdering;
+      const sc = d.meta?.self_consistency;
+      const agreement = sc?.criterion_agreement || {};
+
+      const evidensList = e => (e || []).map(s => `<div class="evidens">${escapeHtml(s)}</div>`).join("");
+      const crits = (d.kriterier || []).map(c => {
+        const a = agreement[c.id];
+        const flag = a && !a.unanimous
+          ? `<span class="pill ukendt" title="AI-kaldene var uenige">⚠ ${escapeHtml(a.agreement)}</span>`
+          : "";
+        return `
+        <div class="crit">
+          <div class="crit-head">
+            <h3>${escapeHtml(c.navn)}</h3>
+            <span>${flag} <span class="pill ${c.niveau}">${escapeHtml(c.niveau)}</span></span>
+          </div>
+          <p style="margin:6px 0;font-size:13.5px;">${escapeHtml(c.begrundelse)}</p>
+          ${evidensList(c.evidens)}
+        </div>`;
+      }).join("");
+
+      const list = arr => `<ul class="tight">${(arr||[]).map(s => `<li>${escapeHtml(s)}</li>`).join("")}</ul>`;
+
+      let scInfo = "";
+      if (sc && sc.n_runs_succeeded > 1) {
+        const spread = sc.score_spread?.spread ?? 0;
+        scInfo = `<p style="font-size:12.5px;color:var(--muted);margin:4px 0 12px;">
+          ${sc.n_runs_succeeded} parallelle AI-kald · score-spredning ±${spread} · ${sc.n_runs_failed > 0 ? sc.n_runs_failed + " kald fejlede" : "alle lykkedes"}
+        </p>`;
+      }
+
+      const limitInfo = d.meta?.report_within_limit === false
+        ? `<p style="color:var(--red);font-size:12.5px;margin:4px 0;">⚠ Rapport: ${d.meta.report_chars} tegn (over grænsen på ${d.meta.report_chars_limit}).</p>`
+        : "";
+
+      $("result").innerHTML = `
+        <div class="disclaimer">${escapeHtml(d.meta?.ai_disclaimer || "Vejledende vurdering.")}</div>
+        <div class="score-row">
+          <span class="num">${Number(v.score).toFixed(0)}</span>
+          <span class="pill ${v.niveau}">${escapeHtml(v.niveau)}</span>
+        </div>
+        ${scInfo}
+        ${limitInfo}
+        <p style="margin-top:8px;">${escapeHtml(v.resume)}</p>
+        ${crits}
+        <div class="group"><h3>Styrker</h3>${list(d.styrker)}</div>
+        <div class="group"><h3>Svagheder</h3>${list(d.svagheder)}</div>
+        <div class="group"><h3>Forbedringsforslag</h3>${list(d.forbedringsforslag)}</div>
+        <div class="group"><h3>Spørgsmål til mundtlig dialog</h3>${list(d.dialogspoergsmaal)}</div>
+        <div class="group"><h3>Forbehold</h3>${list(d.forbehold)}</div>
+      `;
+    }
+
+    function escapeHtml(s) {
+      return String(s ?? "").replace(/[&<>"']/g, ch => ({
+        "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
+      }[ch]));
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,127 @@
+{
+  "samlet_vurdering": {
+    "niveau": "høj",
+    "score": 81.0,
+    "resume": "Rapporten viser et stærkt og velreflekteret praktikforløb hos et IT-konsulenthus med fokus på Azure cloud. Du kobler konsekvent praksis til teori (Agile Manifesto, CIA-triaden, SDLC, Belbin), reflekterer over personlig udvikling og dokumenterer udbytte for både dig selv og virksomheden med konkret feedback. Hovedusikkerheden ligger i, at virksomhedens daglige drift kun beskrives fra dit teams perspektiv, og at omfanget oplyses til 10870 ord, hvilket er betydeligt over de 12000 tegn i de formelle krav."
+  },
+  "kriterier": [
+    {
+      "id": "virksomhed_og_drift",
+      "navn": "Virksomhedsbeskrivelse og daglig drift",
+      "niveau": "middel",
+      "begrundelse": "Du giver en kort, klar beskrivelse af V1 som dansk IT-konsulenthus med fokus på Azure og placerer dig selv i Cloud Operations-teamet med kunden Pensam. Den daglige drift beskrives dog primært gennem dit eget team og via teamday i Aarhus, mens øvrige funktioner (salg, support, ledelse, andre kundeforløb) kun nævnes overfladisk. Læringsmålet om viden om 'den daglige drift i hele praktikvirksomheden' er derfor kun delvist dækket.",
+      "evidens": [
+        "'V1 er et dansk IT-konsulenthus, der arbejder med cloud, drift, sikkerhed og digitalisering...'",
+        "'Jeg blev en del af Cloud Operations-teamet, som designer, implementerer og drifter løsninger i Azure.'",
+        "Teamday-afsnittet beskriver møde med kollegaer, men ikke deres roller eller virksomhedens overordnede drift."
+      ]
+    },
+    {
+      "id": "laeringsmaal",
+      "navn": "Opfyldelse af læringsmål",
+      "niveau": "høj",
+      "begrundelse": "Læringsmålene adresseres bredt: tekniske/analytiske arbejdsmetoder gennem Bicep, IaC, CI/CD og Key Vault; vurdering af problemstillinger gennem balancering af sikkerhed og brugervenlighed; strukturering og planlægning gennem Kanban og prioritering; formidling både skriftligt og mundtligt (præsentation på engelsk); tilegnelse af ny viden gennem certificeringer i sommerferien og selvstændig brug af AI; samarbejde gennem mentor- og teamday-eksempler. Der er en eksplicit kobling mellem konkrete opgaver og læringsmål.",
+      "evidens": [
+        "'Et af studiets læringsmål var udvikling og implementering af IT-løsninger i praksis.'",
+        "'min mentor sørgede for, at jeg allerede i sommerferien tog relevante kurser og certificeringer'",
+        "'Et konkret eksempel var, da jeg skulle præsentere mit arbejde en kollega på engelsk.'"
+      ]
+    },
+    {
+      "id": "opgaver_og_teori",
+      "navn": "Opgaver og refleksion ift. teori",
+      "niveau": "høj",
+      "begrundelse": "Du nævner en imponerende række teorier og kobler dem konkret til praksis: Agile Manifesto, vandfald vs. agile, SDLC, CIA-triaden, RBAC og least privilege, Zero Trust, samt Belbins teamroller. Hver teori knyttes til en konkret arbejdssituation. Svagheden er, at de konkrete tekniske opgaver ikke altid beskrives med så meget detalje at læseren kan vurdere kompleksiteten - 'Bilag 1-4' nævnes, men selve resultaterne refereres ret kort.",
+      "evidens": [
+        "'CIA-triaden (Confidentiality, Integrity og Availability) blev et aktivt redskab...'",
+        "'Resultatet mindede mig om Belbins teamroller, som vi har arbejdet med på studiet'",
+        "'I modsætning til vandfaldsmodellen som følger et fast forløb...'"
+      ]
+    },
+    {
+      "id": "personlig_udvikling",
+      "navn": "Refleksion over personlige udviklingsmål",
+      "niveau": "høj",
+      "begrundelse": "Personlige udviklingsmål reflekteres systematisk og analytisk gennem personlighedstesten, oplevelsen af at præsentere på engelsk, og forholdet til mentoren. Du diskuterer eksplicit en revurdering af dit selvbillede (fra 'analytisk og selvstændig' til 'koordinerende og relationsskabende') og kobler det til læring om kommunikation. Det er ærlig og funderet refleksion.",
+      "evidens": [
+        "'Praktikken viste, at jeg faktisk trives i samarbejde og naturligt tager initiativ til dialoger'",
+        "'Det var grænseoverskridende og præsentationen gjorde mig mere bevidst om, at teknisk kunnen kun er én del af rollen'",
+        "'Jeg lærte at ro og nysgerrighed ofte er nøglen, når presset er størst'"
+      ]
+    },
+    {
+      "id": "udbytte_for_virksomhed_og_studerende",
+      "navn": "Udbytte for virksomhed og studerende",
+      "niveau": "høj",
+      "begrundelse": "Begge perspektiver er dækket. Eget udbytte fremgår af tekniske og personlige eksempler. Virksomhedens udbytte er konkret underbygget med eksempler på leverancer (parameterfiler, Bicep-templates, pipelines hos PenSam) og direkte feedback i Bilag 4. Det er en af rapportens stærkeste passager.",
+      "evidens": [
+        "'Jeg deltog aktivt i udviklingen af løsninger, blandt andet ved at forbedre parameterfiler, designe Bicep-templates og udvikle pipelines, som blev implementeret direkte hos kunden.'",
+        "Citat fra kollega i Bilag 4: 'du har virkeligt bidraget til den positive stemning på kontoret'",
+        "'Mit arbejde skabte værdi for både teamet og PenSam og blev mødt med positiv feedback.'"
+      ]
+    },
+    {
+      "id": "dare_share_care",
+      "navn": "Dare, Share, Care",
+      "niveau": "høj",
+      "begrundelse": "Alle tre værdier kommer til udtryk. Dare ses i mod til at præsentere på engelsk, tage certificeringer i sommerferien og kaste sig over et ukendt felt (cloud). Share ses gennem mentor-relationen, videndeling og ønsket om at få teamet til at fungere. Care kommer eksplicit til udtryk i afslutningen 'turde række ud, dele viden, stille spørgsmål og vise omsorg, når nogen har en svær dag'.",
+      "evidens": [
+        "'jeg allerede i sommerferien tog relevante kurser og certificeringer'",
+        "'samarbejde ikke kun handler om at tale sammen, men om at skabe fælles forståelse'",
+        "'At turde række ud, dele viden, stille spørgsmål og vise omsorg, når nogen har en svær dag.'"
+      ]
+    },
+    {
+      "id": "form_og_formidling",
+      "navn": "Form, struktur og formidling",
+      "niveau": "middel",
+      "begrundelse": "Rapporten har klare overskrifter, en god rød tråd og bruger fodnoter samt bilag. Sproget er flydende, men har enkelte små fejl ('teamsstadig', 'aktion' i stedet for 'i aktion'). Hovedudfordringen er omfanget: du oplyser selv 10870 ord. De formelle krav er max 5 normalsider á 12000 tegn ekskl. bilag. 10870 ord svarer til langt mere end dette - hvis det reelt er ord (ikke tegn) ligger rapporten markant over grænsen.",
+      "evidens": [
+        "'Antal ord 10870 med mellemrum'",
+        "Krav: 'maks. 5 normalsider (i alt 12000 tegn inkl. mellemrum) ekskl. bilag.'",
+        "Strukturen med tydelige underafsnit ('Sikkerhed', 'AI er ikke nødvendigvis en dårlig ting', 'Teamday...')"
+      ]
+    }
+  ],
+  "styrker": [
+    "Konsekvent og eksplicit kobling mellem teori fra studiet og konkret praksis (Agile Manifesto, CIA-triaden, SDLC, Belbin).",
+    "Dyb og analytisk refleksion over personlig udvikling, særligt omkring kommunikation og selvbillede.",
+    "Virksomhedens udbytte underbygges med konkret feedback fra kollegaer (Bilag 4) - ikke kun selvvurdering.",
+    "Alle tre Dare-Share-Care værdier afspejles tydeligt i konkrete situationer.",
+    "Velvalgte konkrete opgaver: Key Vault, Bicep-templates, CI/CD pipelines, der fungerer som tydelige eksempler."
+  ],
+  "svagheder": [
+    "Den daglige drift beskrives kun fra eget team - læringsmålet om hele virksomheden er kun delvist dækket.",
+    "Omfanget oplyses til 10870 ord, hvilket overskrider 12000-tegns grænsen markant hvis tallet er korrekt.",
+    "Tabellen med personlighedstesten er svær at læse og bidrager ikke tydeligt - resultatet kunne formidles i tekst.",
+    "Få konkrete tekniske detaljer om opgaverne - 'Bilag X' nævnes, men centrale beslutninger og resultater refereres kort.",
+    "Enkelte sproglige uklarheder og typografiske fejl (fx 'teamsstadig', sammensmeltede ord)."
+  ],
+  "forbedringsforslag": [
+    "Tilføj et kort afsnit om hele virksomhedens drift på tværs af teams, så læringsmålet om 'den daglige drift i hele praktikvirksomheden' dækkes.",
+    "Reducér omfanget eller tjek tegntællingen - hvis 10870 er ord, er rapporten ca. dobbelt så lang som tilladt.",
+    "Erstat tabellen med personlighedstesten med en kort tekstlig opsummering, og knyt resultatet endnu tættere til en konkret arbejdssituation.",
+    "Beskriv 1-2 af de tekniske opgaver mere detaljeret (fx Key Vault-projektet) - konkrete beslutninger, alternativer og udfald giver mere tyngde.",
+    "Korrekturlæs for sammenløb af ord og småfejl, som forstyrrer flowet."
+  ],
+  "dialogspoergsmaal": [
+    "Du beskriver, at du flyttede secrets til Key Vault og arbejdede med RBAC og private endpoints. Kan du gennemgå de konkrete sikkerhedstrade-offs, du var med til at vurdere?",
+    "Du sammenligner Scrum og Kanban og foretrækker Kanban i V1-konteksten. I hvilken type projekt eller team ville du vælge Scrum, og hvorfor?",
+    "Du nævner at du blev påvirket af mentorens tilgang. Hvilken konkret vane eller arbejdsmetode tager du med dig fra ham/hende?",
+    "Hvordan vil du beskrive forholdet mellem CI/CD-pipelinen og det resterende DevOps-setup hos V1 - hvor stoppede pipelinens ansvar, og hvor begyndte teamets?",
+    "Du beskriver at du brugte AI til at optimere scripts. Hvornår valgte du IKKE at bruge AI, og hvad lå bag den vurdering?",
+    "Hvis du startede praktikken om i morgen, hvilken læringsteknik eller værktøj fra studiet ville du så bruge anderledes - og hvilken ville du springe over?"
+  ],
+  "forbehold": [
+    "Vurderingen er baseret udelukkende på den indsendte tekst. Bilag 1-4 nævnes som billeder og kan ikke ses, så krav om visuel evidens (Kanban-board, pipeline-diagram, SDLC-diagram, feedback) kan ikke verificeres.",
+    "Omfangsvurderingen forudsætter at '10870 ord' er korrekt opgivet - det skal verificeres mod den faktiske tekst og mod kravet om 12000 tegn.",
+    "AI-vurderingen kan ikke erstatte den mundtlige eksamen eller censors helhedsvurdering, særligt ift. stof der præsenteres med visuelt eller mundtligt materiale."
+  ],
+  "meta": {
+    "source_file": "sample-data/student1.md",
+    "model": "claude-opus-4-7 (illustrative manual run)",
+    "rubric_name": "Praktikrapport - Datamatiker",
+    "rubric_version": "1.0",
+    "ai_disclaimer": "Vejledende vurdering. Ikke en formel bedømmelse."
+  }
+}
